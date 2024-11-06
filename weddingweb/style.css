@@ -1,0 +1,775 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('wedding-background.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.content h1 {
+  font-family: 'Cursive', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.play-button {
+  font-size: 2rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  width: 60px;
+  height: 60px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+  
+  header {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    font-family: 'Brush Script MT', cursive;
+  }
+  
+  header h1 span {
+    font-weight: normal;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .hero img {
+    width: 30%;
+    border-radius: 5px;
+  }
+  
+  .details {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .details h2 {
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .details p {
+    font-size: 18px;
+    font-family: 'Brush Script MT', cursive;
+    color: #666;
+  }
+  
+  .about-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .about-section h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .profile {
+    width: 300px;
+    margin: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .profile-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .profile-info h4 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .profile-info p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .profile-info strong {
+    color: #333;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  .groom-image {
+    background-color: #e3f2fd;
+  }
+  
+  .bride-image {
+    background-color: #ffebee;
+  }
+
+  .story {
+    background-color: #f5f5f5;
+    padding: 30px;
+    margin-top: 20px;
+  }
+  
+  .story h3 {
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 15px;
+  }
+  
+  .story p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  #loader img {
+    width: 50%;
+    height: 70%;
+  }
+  
+  /* Rest of your CSS styles */
+  header {
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .header-sec h1 {
+    font-size: 36px;
+    font-family: 'Brush Script MT', cursive;
+  }
+  
+  .header-sec h1 span {
+    font-weight: 100;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .hero img {
+    width: 30%;
+    border-radius: 5px;
+  }
+  
+  .details {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .details h2 {
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .details p {
+    font-size: 18px;
+    font-family: 'Brush Script MT', cursive;
+    color: #666;
+  }
+  
+  .story {
+    background-color: #f5f5f5;
+    padding: 30px;
+    margin-top: 20px;
+  }
+  
+  .story h3 {
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 15px;
+  }
+  
+  .story p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .timeline {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    position: relative;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #ddd;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-event {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .timeline-event:nth-child(even) .timeline-content {
+    order: 1;
+  }
+  
+  .timeline-content {
+    width: 45%;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-content.right {
+    margin-left: 20px;
+    text-align: left;
+  }
+  
+  .timeline-content.left {
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .timeline-image {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .timeline-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 1rem;
+  }
+
+ /* Carousel Container */
+ .carousel {
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Title Styling */
+.carousel-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Image Slider */
+.carousel-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  transition: 0.5s;
+}
+
+/* Individual Image Styling */
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navigation Buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+/* Thumbnail Section */
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.thumbnail-container img {
+  width: 100px;
+  height: 75px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+ /* Button Styling */
+ .add-calendar-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-calendar-button:hover {
+  background-color: #0056b3;
+}
+    
+.container-footer {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10%;
+  margin-left: 10% ;
+}
+
+/* About Us section */
+.about-us {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-us h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Map section */
+.map {
+  flex: 1;
+  min-height: 400px; /* Ensures the map section is visible */
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .map {
+    min-height: 300px;
+  }
+}
+
+/* Footer styling */
+footer {
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Flex container for footer */
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Flex box styling for items */
+.flex-box {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Text styling */
+.twentyNine-size {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .flex-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flex-box {
+    width: 100%; /* Make each box take full width */
+    padding: 5px 0;
+  }
+}
+
+.about-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-section h2 {
+  color: #d4af37; /* Gold color */
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.about-section h1 {
+  font-family: "Cursive", sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: #eef7fb;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.profile-info h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.profile-info h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Icon Styling */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.icons span {
+  font-size: 20px;
+  color: #d4af37;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icons span:hover {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .profile-card {
+    width: 100%;
+  }
+}
+
+
+.flex-wrapper-1{
+  position: relative;
+  transform: translateY(25%);
+  margin-left: 10%;
+  margin-bottom: 2%;
+  padding: 5em auto;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 80vh;
+  background-color: whitesmoke;
+}
+.flex-wrapper-1 .box-1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.flex-wrapper-1 .box-2{
+  position: relative;
+  text-align: left;
+  width: 43%;
+}
+.sidepic {
+  width: 100%;
+  max-width: 350px; /* Limit the maximum width on larger screens */
+  height: auto; /* Keeps the aspect ratio */
+  border-radius: 0.4em;
+  transition: width 0.3s ease; /* Smooth resizing effect */
+}
+/* Responsive styling */
+@media (max-width: 768px) {
+  .sidepic {
+    max-width: 90%; /* Adjusts to 90% of the viewport width on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidepic {
+    max-width: 50%; /* Full width on smaller mobile screens */
+  }
+}
+.text-box{
+  position: relative;
+  transform: translate(-10%,50%);
+}
+.text-box .pattern{
+  position: absolute;
+  filter: opacity(.2);
+  left: 18%;
+  top:-12%;
+}
+.flex-wrapper-2{
+  margin-top:10% ;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.flex-wrapper-2 .box-1{
+  position: relative;
+  margin: 10% auto;
+}
+.flex-wrapper-2 .box-2{
+  position: relative;
+  text-align: right;
+  width: 43%;
+  margin: 10% auto;
+}
+.text-box{
+  position: relative;
+  transform: translate(-10%,50%);
+}
+.text-box .pattern{
+  position: absolute;
+  filter: opacity(.2);
+  left: 18%;
+  top:-12%;
+}
+
+.flex-contain{
+   display: flex;
+}
+.flex-wrapper{
+   justify-content: center;
+   display: flex;
+}

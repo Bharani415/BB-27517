@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria & Ethan Wedding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <script src="index.js"></script>
+
+  <!-- Loader -->
+  <div id="loader">
+    <img src="./images/loading-wedding-animation.gif" alt="Loading...">
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" class="header-sec">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">People</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">RSVP</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="header-sec">Bharani <span>and</span> Priya</h1>
+          <p>We are getting married</p>
+          <button class="play-button">▶</button>
+        </div>
+    </div>
+
+    <section class="hero">
+      <img src="images/couple1.jpg" alt="Couple Image 1">
+      <img src="images/couple2.jpg" alt="Couple Image 2">
+      <img src="images/couple3.jpg" alt="Couple Image 3">
+    </section>
+
+    <section class="details">
+      <h2>November 17, 2024</h2>
+      <p>Annai Mahal, Thiruverkadu</p>
+      <p>#Chennai</p>
+    </section>
+
+    <section class="about-section">
+        <h2>About</h2>
+        <h1>Groom & Bride</h1>
+        
+        <div class="container">
+          <!-- Groom Section -->
+          <div class="profile-card groom">
+            <img src="groom.jpg" alt="The Groom">
+            <div class="profile-info">
+              <h3>The Groom</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+                accusantium voluptates unde qui aperiam minima dignissimos
+                deleniti quia. Quis distinctio, dolorum repudiandae corporis et
+                voluptatum quia laudantium.
+              </p>
+              <h4>Bharani Dharan. P</h4>
+              <div class="icons">
+                <span>📷</span>
+                <span>❤️</span>
+                <span>🌍</span>
+                <span>📧</span>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Bride Section -->
+          <div class="profile-card bride">
+            <div class="profile-info">
+              <h3>The Bride</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+                accusantium voluptates unde qui aperiam minima dignissimos
+                deleniti quia. Quis distinctio, dolorum repudiandae corporis et
+                voluptatum quia laudantium.
+              </p>
+              <h4>PriyaDharsini.R</h4>
+              <div class="icons">
+                <span>📷</span>
+                <span>❤️</span>
+                <span>🌍</span>
+                <span>📧</span>
+              </div>
+              <img src="bride.jpg" alt="The Bride">
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="story">
+      <h3>Our Story</h3>
+      <p>I met while we were in college at Loyola Marymount University. We both played volleyball and were always at the beach. We'd always catch each other's gaze and after a summer of smiles, we FINALLY went out for coffee. There was an instant connection and I felt like I knew him my entire life. He's my best friend and I'm so excited to marry him!</p>
+      <p>We're both so excited to share our special day with our family, friends and teammates! :)</p>
+    </section>
+  </div>
+
+  <section class="timeline">
+    <div class="timeline-event">
+      <div class="timeline-content left">
+        <h3>First Date</h3>
+        <p class="date">10 Jan 2021</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut dapibus massa.</p>
+      </div>
+      <div class="timeline-image">
+        <img src="first-date.jpg" alt="First Date">
+      </div>
+    </div>
+
+    <div class="timeline-event">
+      <div class="timeline-image">
+        <img src="proposal.jpg" alt="Proposal">
+      </div>
+      <div class="timeline-content right">
+        <h3>Proposal</h3>
+        <p class="date">15 Jun 2022</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut dapibus massa.</p>
+      </div>
+    </div>
+
+    <div class="timeline-event">
+      <div class="timeline-content left">
+        <h3>Engagement</h3>
+        <p class="date">20 Sep 2022</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut dapibus massa.</p>
+      </div>
+      <div class="timeline-image">
+        <img src="engagement.jpg" alt="Engagement">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="carousel-title">Our Photo Gallery</div>
+
+    <!-- Carousel Container -->
+    <div class="carousel">
+      <!-- Carousel Slider -->
+      <div class="carousel-slider">
+        <!-- Slides -->
+        <div class="carousel-slide"><img src="image1.jpg" alt="Slide 1"></div>
+        <div class="carousel-slide"><img src="image2.jpg" alt="Slide 2"></div>
+        <div class="carousel-slide"><img src="image3.jpg" alt="Slide 3"></div>
+        <div class="carousel-slide"><img src="image4.jpg" alt="Slide 4"></div>
+        <div class="carousel-slide"><img src="image5.jpg" alt="Slide 5"></div>
+      </div>
+  
+      <!-- Navigation Buttons -->
+      <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  
+    <!-- Thumbnail Section -->
+    <div class="thumbnail-container">
+      <img src="image1.jpg" alt="Thumbnail 1" onclick="goToSlide(0)">
+      <img src="image2.jpg" alt="Thumbnail 2" onclick="goToSlide(1)">
+      <img src="image3.jpg" alt="Thumbnail 3" onclick="goToSlide(2)">
+      <img src="image4.jpg" alt="Thumbnail 4" onclick="goToSlide(3)">
+      <img src="image5.jpg" alt="Thumbnail 5" onclick="goToSlide(4)">
+    </div>
+  </section>
+
+  <button class="add-calendar-button" onclick="createICSFile()">Add Events to Calendar</button>
+
+  <section class="footer">
+    <div class="container-footer">
+        <!-- About Us Section -->
+        <div class="about-us">
+          <h2>About Us</h2>
+          <p>
+            Welcome to our website! We are a dedicated team committed to providing exceptional service and quality products. 
+            Our mission is to bring the best experience to our customers and build long-lasting relationships. With a passion 
+            for innovation and a focus on customer satisfaction, we strive to meet your needs with integrity and transparency.
+          </p>
+        </div>
+    
+        <!-- Google Map Section with Paris Location -->
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999348890589!2d2.2944813156741153!3d48.85884407928737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbcf058b631%3A0x6cd6b14b8c80e093!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1614695737691!5m2!1sen!2sfr" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+  </section>
+</section>
+
+
+
+  <footer>
+    <div class="flex-wrapper">
+        <div class="flex-box">
+            <h3 class="twentyNine-size">copyright reserved 2021</h3>
+        </div>
+        <div class="flex-box">
+            <div class="flex-wrapper">
+                <div class="flex-box">
+                    <h3 class="twentyNine-size">sitemap</h3>
+                </div>
+                <div class="flex-box">
+                    <h3 class="twentyNine-size">Terms & Conditions</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
