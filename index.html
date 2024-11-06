@@ -16,32 +16,34 @@
   </div>
 
   <!-- Main Content -->
-  <div id="main-content" class="header-sec">
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">People</a></li>
-          <li><a href="#">Schedule</a></li>
-          <li><a href="#">Travel</a></li>
-          <li><a href="#">RSVP</a></li>
-        </ul>
-      </nav>
-    </header>
 
+  
+    <nav>
+      <ul class="nav-li">
+        <li><a href="#timeline">Events</a></li>
+        <li><a href="#about-section">Story</a></li>
+        <li><a href="#footer">Location</a></li>
+        <li><a href="#carousel">Pictures</a></li>
+      </ul>
+    </nav>
+
+  <div id="main-content" class="header-sec">
+ 
     <div class="hero-section">
         <div class="overlay"></div>
+        <img src="./images/homepageBanner.jpg" alt=""class="homeBannerpic">
         <div class="content">
             <h1 class="header-sec">Bharani <span>and</span> Priya</h1>
           <p>We are getting married</p>
-          <button class="play-button">▶</button>
+          <button class="add-calendar-button" onclick="createICSFile()">Block A Date</button>
         </div>
     </div>
 
-    <section class="hero">
+    <!-- <section class="hero">
       <img src="images/couple1.jpg" alt="Couple Image 1">
       <img src="images/couple2.jpg" alt="Couple Image 2">
       <img src="images/couple3.jpg" alt="Couple Image 3">
-    </section>
+    </section> -->
 
     <section class="details">
       <h2>November 17, 2024</h2>
@@ -49,14 +51,14 @@
       <p>#Chennai</p>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about-section">
         <h2>About</h2>
         <h1>Groom & Bride</h1>
         
         <div class="container">
           <!-- Groom Section -->
           <div class="profile-card groom">
-            <img src="groom.jpg" alt="The Groom">
+            <img src="./images/IMG_20220717_095049_036.jpg" alt="The Groom">
             <div class="profile-info">
               <h3>The Groom</h3>
               <p>
@@ -77,6 +79,7 @@
     
           <!-- Bride Section -->
           <div class="profile-card bride">
+            <img src="./images/IMG_20220715_123727.jpg" alt="The Bride">
             <div class="profile-info">
               <h3>The Bride</h3>
               <p>
@@ -92,7 +95,6 @@
                 <span>🌍</span>
                 <span>📧</span>
               </div>
-              <img src="bride.jpg" alt="The Bride">
             </div>
           </div>
         </div>
@@ -105,37 +107,34 @@
     </section>
   </div>
 
-  <section class="timeline">
+  <section class="timeline" id="timeline">
     <div class="timeline-event">
       <div class="timeline-content left">
-        <h3>First Date</h3>
-        <p class="date">10 Jan 2021</p>
+        <h3>Reception-1</h3>
+        <p class="date">16 November 2024</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut dapibus massa.</p>
       </div>
       <div class="timeline-image">
-        <img src="first-date.jpg" alt="First Date">
       </div>
     </div>
 
     <div class="timeline-event">
       <div class="timeline-image">
-        <img src="proposal.jpg" alt="Proposal">
       </div>
       <div class="timeline-content right">
-        <h3>Proposal</h3>
-        <p class="date">15 Jun 2022</p>
+        <h3>Marriage</h3>
+        <p class="date">17 November 2024</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut dapibus massa.</p>
       </div>
     </div>
 
     <div class="timeline-event">
       <div class="timeline-content left">
-        <h3>Engagement</h3>
-        <p class="date">20 Sep 2022</p>
+        <h3>Reception-2</h3>
+        <p class="date">24 November 2024</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut dapibus massa.</p>
       </div>
       <div class="timeline-image">
-        <img src="engagement.jpg" alt="Engagement">
       </div>
     </div>
   </section>
@@ -144,7 +143,7 @@
     <div class="carousel-title">Our Photo Gallery</div>
 
     <!-- Carousel Container -->
-    <div class="carousel">
+    <div class="carousel" id="carousel">
       <!-- Carousel Slider -->
       <div class="carousel-slider">
         <!-- Slides -->
@@ -170,9 +169,9 @@
     </div>
   </section>
 
-  <button class="add-calendar-button" onclick="createICSFile()">Add Events to Calendar</button>
+  <button class="add-calendar-button" onclick="createICSFile()">Block A Date</button>
 
-  <section class="footer">
+  <section class="footer" id="footer">
     <div class="container-footer">
         <!-- About Us Section -->
         <div class="about-us">
@@ -200,19 +199,7 @@
 
   <footer>
     <div class="flex-wrapper">
-        <div class="flex-box">
-            <h3 class="twentyNine-size">copyright reserved 2021</h3>
-        </div>
-        <div class="flex-box">
-            <div class="flex-wrapper">
-                <div class="flex-box">
-                    <h3 class="twentyNine-size">sitemap</h3>
-                </div>
-                <div class="flex-box">
-                    <h3 class="twentyNine-size">Terms & Conditions</h3>
-                </div>
-            </div>
-        </div>
+        <p>Thanks for coming, we don't accept gifts. Cash Only!!!!</p>
     </div>
 </footer>
 
