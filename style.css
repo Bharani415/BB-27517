@@ -6,7 +6,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
     color: #333;
     background-color: #f5f5f5;
     text-align: center;
@@ -16,9 +16,9 @@
 
 .hero-section {
   position: relative;
-  height: 100vh;
+  height: 130%;
   /* background: url('wedding-background.jpg'); */
-  background-image: url('wedding-background.jpg')
+  background-image: url('wedding-background.jpg');
   display: flex;
   padding-top: 25%;
   justify-content: center;
@@ -433,7 +433,8 @@
   max-width: 800px;
   overflow: hidden;
   position: relative;
-  left: 10%;
+  left: 20%;
+  margin-bottom: 5%;
 }
 
 /* Title Styling */
@@ -902,13 +903,14 @@ footer {
 }
 
 
-.block-date p{
+.block-date h1{
   padding:2%;
   color: #000000;
 }
 
 .block-date button{
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
 
 .container-download {
