@@ -954,6 +954,17 @@ footer {
   }
 
   .hero-section .content{
+    top:18%;
+  }
+}
+
+@media (min-width: 480px){
+  .hero-section img{
+    width: 100%;
+    left: 0;
+  }
+
+  .hero-section .content{
     top:48%;
   }
 
