@@ -16,7 +16,7 @@
 
 .hero-section {
   position: relative;
-  height: 70vh;
+  height: 71.5vh;
   /* background: url('wedding-background.jpg'); */
   background-image: url('wedding-background.jpg');
   display: flex;
@@ -64,14 +64,6 @@
   color: white;
 }
 
-.play-button {
-  font-size: 2rem;
-  color: #fff;
-  background-color: transparent;
-  border: none;
-  width: 60px;
-  height: 60px;
-}
 
 .arrow {
   position: absolute;
@@ -911,6 +903,7 @@ footer {
 .block-date button{
   margin-top: 2%;
   margin-bottom: 3%;
+  box-shadow: 3.5px 3.5px 5px lightblue;
 }
 
 .container-download {
