@@ -63,9 +63,9 @@ showSlide(slideIndex);
 
   function createICSFile() {
     const events = [
-      { title: "Event on November 16", description: "Event details for November 16, 2024", date: "2024-11-16" },
-      { title: "Event on November 17", description: "Event details for November 17, 2024", date: "2024-11-17" },
-      { title: "Event on November 24", description: "Event details for November 24, 2024", date: "2024-11-24" }
+      { title: "Reception-Chennai", description: "Reception-1 on Chennai for November 16, 2024", date: "2024-11-16" },
+      { title: "Marriage-Chennai", description: "Marriage on Chennai for November 17, 2024", date: "2024-11-17" },
+      { title: "Reception-Trichy", description: "Reception-2 on Trichy for November 24, 2024", date: "2024-11-24" }
     ];
 
     let icsContent = "BEGIN:VCALENDAR\nVERSION:2.0\n";
@@ -74,8 +74,8 @@ showSlide(slideIndex);
       icsContent += `BEGIN:VEVENT\n`;
       icsContent += `SUMMARY:${event.title}\n`;
       icsContent += `DESCRIPTION:${event.description}\n`;
-      icsContent += `DTSTART:${event.date.replace(/-/g, "")}T090000Z\n`;
-      icsContent += `DTEND:${event.date.replace(/-/g, "")}T100000Z\n`;
+      icsContent += `DTSTART:${event.date.replace(/-/g, "")}T080000Z\n`;
+      icsContent += `DTEND:${event.date.replace(/-/g, "")}T080000Z\n`;
       icsContent += `LOCATION:Online\n`;
       icsContent += `END:VEVENT\n`;
     });
