@@ -17,11 +17,13 @@
 .hero-section {
   position: relative;
   height: 100vh;
-  background: url('wedding-background.jpg') no-repeat center center/cover;
+  /* background: url('wedding-background.jpg'); */
+  background-image: url('wedding-background.jpg')
   display: flex;
   padding-top: 25%;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .overlay{
@@ -909,6 +911,40 @@ footer {
   margin-bottom: 5%;
 }
 
+.container-download {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: #d4af37;
+  
+}
+
+.column-download {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  outline: 1.5px solid white;
+  outline-offset: -6px;
+}
+
+.column-download h3 {
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+
 @media (max-width: 480px){
   .hero-section img{
     width: 100%;
@@ -947,5 +983,18 @@ footer {
     margin-top: 5%;
     text-align: center;
     padding-left: 15%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-download {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+/* Responsive layout for smaller screens (mobile devices) */
+@media (max-width: 600px) {
+  .container-download {
+      grid-template-columns: 1fr; /* 1 column for small screens */
   }
 }
