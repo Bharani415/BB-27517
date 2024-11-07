@@ -26,11 +26,13 @@
 
 .overlay{
   position: absolute;
-  top: 0;
-  left: 10%;
-  width: 80%;
+  top: 0%;
+  left: 0%;
+  width: 100%;
   height: 100%;
   z-index: 1;
+  background-color: #302a2a;
+  opacity: 50%;
 }
 
 .homeBannerpic{
@@ -55,6 +57,7 @@
 
 .content p {
   font-size: 1.5rem;
+  font-family: 'Brush Script MT', cursive;
   margin-bottom: 20px;
   color: white;
 }
@@ -280,9 +283,10 @@
   }
   
   .header-sec h1 {
+    color: #d4af37;
     font-size: 36px;
-    font-family: 'Brush Script MT', cursive;
-  }
+    font-family: Georgia, serif;
+    }
   
   .header-sec h1 span {
     font-weight: 100;
@@ -427,6 +431,7 @@
   max-width: 800px;
   overflow: hidden;
   position: relative;
+  left: 10%;
 }
 
 /* Title Styling */
