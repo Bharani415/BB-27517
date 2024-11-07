@@ -16,7 +16,7 @@
 
 .hero-section {
   position: relative;
-  height: 90vh;
+  height: 80vh;
   /* background: url('wedding-background.jpg'); */
   background-image: url('wedding-background.jpg');
   display: flex;

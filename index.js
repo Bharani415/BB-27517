@@ -90,3 +90,4 @@ showSlide(slideIndex);
     link.click();
     document.body.removeChild(link);
   }
+
